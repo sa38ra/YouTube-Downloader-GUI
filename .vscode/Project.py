@@ -14,6 +14,7 @@ def download_video(resolution="high", is_audio=False):
 
     # Define the download options
     ydl_opts = {
+        'ffmpeg_location': r"D:\MultiMedia\ffmpeg-7.1-essentials_build\bin",  # Specify the FFmpeg location
         'outtmpl': f'downloads/{save_path}-%(title)s.%(ext)s',  # File output template
         'quiet': True,  # Suppress unnecessary output
     }
